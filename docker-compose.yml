@@ -39,8 +39,8 @@ services:
   datadog:
     image: datadog/agent:latest
     environment:
-      - DD_API_KEY=30bf3deaa143cfc4f3d5d3198f12e98e
-      - DD_SITE=us5.datadoghq.com
+      - DD_API_KEY=${DATADOG_API_KEY}
+      - DD_SITE=${DD_SITE}
       - DD_APM_ENABLED=true
       - DD_LOGS_ENABLED=true
       - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
